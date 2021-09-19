@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Dice Roller</string>
+    <string name="hello_message">-</string>
+    <string name="button_set">Roll Next Dice</string>
+    <string name="button_set2">Roll All Dices</string>
+    <string name="dice_nb">1</string>
+    <string name="button_plus">+</string>
+    <string name="button_minus">-</string>
+    <string name="button_results">Results</string>
+    <string name="title_text">Results</string>
+    <string name="button_delete">Delete</string>
+    <string name="result_text">-</string>
+</resources>
