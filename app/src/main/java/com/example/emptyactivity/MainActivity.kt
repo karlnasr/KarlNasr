@@ -159,10 +159,12 @@ class MainActivity : AppCompatActivity() {
                 clickcnt = 0
             }
         }
+        DataResults.AddOne(rand, v)
     }
 
     fun btnSet2Clicked(sender: View){
         clickcnt=0
+        val list: MutableList<Int> = mutableListOf()
         for(i in 1..4)
         {
             var rand=(1..6).random()
@@ -182,6 +184,7 @@ class MainActivity : AppCompatActivity() {
                 6 -> resourceId=resources.getIdentifier("n6",
                     "drawable", packageName)
             }
+
             if(v==1){
                 imgone.setImageResource(resourceId)
                 imgtwo.setImageResource(R.drawable.dice0)
@@ -213,6 +216,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+        DataResults.AddResults(Results(list,v))
     }
 
     fun ShowImg(x: Int){
